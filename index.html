@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@900&family=Oswald&display=swap"
-        rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/slick-theme.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@900&family=Oswald&display=swap" rel="stylesheet">
     <title>KALIMATAN</title>
 </head>
 
@@ -47,24 +49,38 @@
                 </div>
             </div>
         </div>
-        <!-- Навигационные ссылки -->
 
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main">
-        <h1 class="main__title">main</h1><!-- - h1-h6. -->
         <!-- Раздел страницы-->
-        <section class="first-section">
-            <h2 class="first-section__title">section</h2><!-- + h2-h6... -->
-            <article class="first-article">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 container">
-                            <h2 class="first-article__title">article</h2><!-- + h2-h6... -->
+        <section class="main-slider">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 container">
+                        <div class="main-slider__box">
+                            <div class="main-slider__wrapper one">
+                                <p class="main-slider__dscr">Не зубрите язык - изучать можно</p>
+                                <h2 class="main-slider__name"><span>УВЛЕЧЕННО</span></h2>
+                                <p class="main-slider__dscr-all">Язык по своей природе - средство, а не цель</p>
+                                <a class="main-slider__btn" href="#">Установить приложение</a>
+                            </div>
+                            <div class="main-slider__wrapper two">
+                                <p class="main-slider__dscr">Сервис для увлекательной</p>
+                                <h2 class="main-slider__name"><span>ПРАКТИКИ</span></h2>
+                                <p class="main-slider__dscr-all">Арабского языка</p>
+                                <a class="main-slider__btn" href="#">Установить приложение</a>
+                            </div>
+                            <div class="main-slider__wrapper three">
+                                <p class="main-slider__dscr">Наибольшая сложность освоения любого языка - это набирание массы</p>
+                                <h2 class="main-slider__name"><span>СЛОВ</span></h2>
+                                <p class="main-slider__dscr-all">на чем большинство, начавших изучение, увязают и бросают. Но не тут…</p>
+                                <a class="main-slider__btn" href="#">Установить приложение</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
     <!--Нижний колонтитул страницы-->
@@ -84,9 +100,13 @@
         </nav>
     </footer>
     <!--Style-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.min.js"></script>
+
+
+
+
 </body>
 
 </html>
