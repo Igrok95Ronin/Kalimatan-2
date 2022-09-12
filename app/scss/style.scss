@@ -1,4 +1,39 @@
-    //vars
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../assets/fonts/icomoon.eot?tngoiy');
+    src:  url('../../assets/fonts/icomoon.eot?tngoiy#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/icomoon.ttf?tngoiy') format('truetype'),
+      url('../../assets/fonts/icomoon.woff?tngoiy') format('woff'),
+      url('../../assets/fonts/icomoon.svg?tngoiy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-angle-left:before {
+    content: "\f104";
+  }
+  .icon-angle-right:before {
+    content: "\f105";
+  }
+  
+
+//vars
 //Colors    
 $bgColorHeaderNav: linear-gradient(-39deg, #8b0fe4 10%, #6d0eb1 40%);
 $navColorHoverActive: #ffec17;
@@ -8,7 +43,6 @@ $bgColorBtn: #ed1c94;
 $bgColorLine: linear-gradient(to right, #ed1c94 50%, #981df0 120%);
 $bgColorFooter: #29293a;
 $colorTitle: #29293A; 
-//Size
 
 
     
@@ -44,7 +78,7 @@ body{
 
 //Header
 .header {
-    background: $bgColorHeaderNav;
+    background: $bgColorSite;
     color: #fff;
 }
 .header__box {
@@ -164,6 +198,24 @@ body{
                 }
             }
         }
+    }
+}
+.header__fixed {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: $bgColorHeaderNav;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes  fade{
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
     }
 }
 //main-slider
@@ -360,5 +412,124 @@ body{
 .slick-active {
     button {
         background-color: #ffec17;
+    }
+}
+//about
+
+.about {
+    padding: 150px 0;
+}
+.about__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #5846d1;
+    margin-bottom: 120px;
+    span {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #5846d1;
+            width: 60px;
+            height: 4px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.about__box {
+    max-width: 1400px;
+    margin: 0 auto;
+    // outline: auto;
+    padding: 0 100px;
+}
+.about__slider {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.about__slider-img {
+    width: 100%;
+    max-width: 590px;
+    max-height: 320px;
+    border-radius: 20px;
+}
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__name {
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 20px;
+        background-color: #5846d1;
+        bottom: 5px;
+        left: 0;
+    }
+}
+.about__dscr {
+    color: #000;
+    font-size: 20px;
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 2;
+    font-size: 0;
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border: 0;
+    transition: all 1s;
+    &:hover {
+        background-color: rgba(#5846d1, .1);
+    }
+    &::before {
+        content: "\f104";
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 100px;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.slick-next {
+    position: absolute;
+    z-index: 2;
+    font-size: 0;
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border: 0;
+    transition: all 1s;
+    &:hover {
+        background-color: rgba(#5846d1, .1);
+    }
+    &::before {
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 100px;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
