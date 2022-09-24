@@ -39,8 +39,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
           });
           
-   
-   
+  
+//paroller
+          $('.my-paroller').paroller(); 
    
    
    
