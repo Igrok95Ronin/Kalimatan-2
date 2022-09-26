@@ -34,8 +34,34 @@
   .icon-quote-left:before {
     content: "\f10d";
   }
+  .icon-movie:before {
+    content: "\e905";
+  }
+  .icon-calendar:before {
+    content: "\e901";
+  }
+  .icon-moonandstar:before {
+    content: "\e902";
+  }
+  .icon-book:before {
+    content: "\e903";
+  }
+  .icon-collections:before {
+    content: "\e906";
+  }
   .icon-eye:before {
     content: "\e900";
+  }
+  .icon-cashapp:before {
+    content: "\e904";
+    color: #00c244;
+  }
+  .icon-microsoftword:before {
+    content: "\e907";
+    color: #2b579a;
+  }
+  .icon-users:before {
+    content: "\e908";
   }
   
   
@@ -1057,7 +1083,7 @@ body{
 }
 //news
 .news {
-    background-color: $bgColorSite;
+    background-image: linear-gradient(135deg, #6d0eb1 59%, #080ab4 100%);
     padding: 160px 0;
 }
 .containerPadding {
@@ -1117,6 +1143,110 @@ body{
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
+}
+//benefitsKalimatan
+.benefitsKalimatan {
+    padding: 160px 0;
+}
+.benefitsKalimatan__title {
+    font-size: 48px;
+    line-height: 1.375;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #29293a;
+    text-align: center;
+    margin: 0px 0px 100px;
+    position: relative;
+    &::before {
+        @include line();
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.benefitsKalimatan__box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.benefitsKalimatan__inner{
+    .benefitsKalimatan__name {
+        color: #29293a;
+        font-size: 24px;
+        line-height: 1.5;
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            font-family: 'icomoon';
+            content: "\e901";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            object-fit: cover;
+            transform: translateY(-50%);
+            color: $bgColorSite;
+            font-size: 30px;
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(2){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e904";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(3){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e903";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(4){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e902";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(5){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e905";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(6){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e908";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(7){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e906";
+        }
+    }
+}
+.benefitsKalimatan__inner:nth-child(8){
+    .benefitsKalimatan__name {
+        &::before{
+            content: "\e907";
+        }
+    }
+}
+
+.benefitsKalimatan__dscr {
+    margin-top: 22px;
+    color: #838386;
+    line-height: 1.55556;
 }
 
 
