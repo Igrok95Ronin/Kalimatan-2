@@ -40,6 +40,9 @@
   .icon-movie:before {
     content: "\e905";
   }
+  .icon-arrow-up:before {
+    content: "\e90c";
+  }
   .icon-play-alt:before {
     content: "\e909";
   }
@@ -69,6 +72,9 @@
   }
   .icon-folder:before {
     content: "\e90a";
+  }
+  .icon-arrow-up1:before {
+    content: "\e90e";
   }
   .icon-collections:before {
     content: "\e906";
@@ -312,6 +318,55 @@ body{
     to {
         opacity: 1;
         top: 0;
+    }
+}
+//btnFixed
+.btnFixed {
+
+}
+.btnFixed__box {
+    display: flex;
+    justify-content: end;
+}
+.btnFixed__btnTopFixedNone{
+    display: none;
+}
+.btnFixed__btnTopFixed {
+    display: block;
+    color: #ffffff;
+    background-color: #ed1c94;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    z-index: 999;
+    bottom: 40px;
+    animation-name: btn;
+    animation-duration: 1s;
+    transition: .45s all ease-in-out;
+    &:hover {
+        color: #ffffff;
+        background-color: #981df0;
+        text-decoration: none;
+    }
+    &::before {
+        content: "\e90e";
+        font-family: 'icomoon';
+        position: absolute;
+    }
+}
+
+@keyframes  btn{
+    from {
+        opacity: 0;
+        bottom: -50px;
+    }
+    to {
+        opacity: 1;
+        bottom: 30px;
     }
 }
 //main-slider

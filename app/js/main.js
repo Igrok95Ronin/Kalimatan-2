@@ -30,11 +30,14 @@ window.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('scroll', () => {
 
             const header = document.querySelector('.header');
+            const btnFixed__btnTopFixedNone = document.querySelector('.btnFixed__btnTopFixedNone');
 
             if(scrollY > 150) {
                 header.classList.add('header__fixed');
+                btnFixed__btnTopFixedNone.classList.add('btnFixed__btnTopFixed');
             }else {
                 header.classList.remove('header__fixed');
+                btnFixed__btnTopFixedNone.classList.remove('btnFixed__btnTopFixed');
             }
 
           });
