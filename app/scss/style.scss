@@ -31,8 +31,8 @@
   .icon-books:before {
     content: "\e920";
   }
-  .icon-telegram:before {
-    content: "\ea95";
+  .icon-whatsapp:before {
+    content: "\ea93";
   }
   .icon-youtube:before {
     content: "\ea9d";
@@ -51,6 +51,9 @@
   }
   .icon-quote-left:before {
     content: "\f10d";
+  }
+  .icon-vk:before {
+    content: "\f189";
   }
   .icon-documents:before {
     content: "\e006";
@@ -85,9 +88,15 @@
     content: "\e907";
     color: #2b579a;
   }
+  .icon-telegram1:before {
+    content: "\e90d";
+    color: #2ca5e0;
+  }
   .icon-users:before {
     content: "\e908";
   }
+  
+  
   
   
   
@@ -1312,7 +1321,7 @@ body{
             padding-left: 30px;
             position: relative;
             &:hover {
-                transition: .25s;
+                transition: .5s;
                 color: #000;
             }
             &::before {
@@ -1346,7 +1355,7 @@ body{
             padding-left: 30px;
             position: relative;
             &:hover {
-                transition: .25s;
+                transition: .5s;
                 color: #000;
             }
             &::before {
@@ -1392,7 +1401,7 @@ body{
             padding-left: 30px;
             position: relative;
             &:hover {
-                transition: .25s;
+                transition: .5s;
                 color: #000;
             }
             &::before {
@@ -1408,7 +1417,7 @@ body{
     .other__li:nth-child(2){
         .other__link {
             &::before {
-                content: "\ea95";
+                content: "\e90d";
                 font-family: 'icomoon';
                 position: absolute;
                 left: 0;
@@ -1430,10 +1439,127 @@ body{
         }
     }
 }
-
-
-
-
+//footer
 .footer {
-    height: 100vh;
+    background-color: #29293a;
+    padding: 55px 0;
+}
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.footer__logo {
+    a {
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 50px;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+.header__logo-img {
+    height: 60px;
+}
+.footer__center {
+    max-width: 500px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__title {
+    color: #838386;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.55556;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.footer__privacy {
+}
+.footer__link {
+    color: #838386;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: #fff;
+    }
+}
+.footer__right {
+}
+.footer__whatsapp {
+    position: relative;
+    border: 1px solid transparent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #21212e;
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #3dbc4d;
+        color: #ffffff;
+    }
+    &::before {
+        content: "\ea93";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.footer__telegram {
+    position: relative;
+    border: 1px solid transparent;
+    width: 45px;
+    height: 45px;
+    margin: 0 9px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #21212e;
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #2ca5e0;
+        color: #ffffff;
+    }
+    &::before {
+        content: "\e90d";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.footer__vk {
+    position: relative;
+    border: 1px solid transparent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #21212e;
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: rgb(70, 128, 194);
+        color: #ffffff;
+    }
+    &::before {
+        content: "\f189";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
