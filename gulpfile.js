@@ -68,9 +68,9 @@ function watch() {/* отслеживает изминения */
     })
 
     gulp.watch(['index.html']).on('change', browserSync.reload);/* обновляет браузер при изминении index.html */
-    gulp.watch('app/scss/', styles);/* если есть ихминения в каталоге то выполняется функция styles */
-    gulp.watch('app/js/', scripts);/* если есть ихминения в каталоге то выполняется функция scripts */
-    gulp.watch('app/img/', img);/* если есть ихминения в каталоге то выполняется функция img */
+    gulp.watch('app/scss/', styles);/* если есть изминения в каталоге то выполняется функция styles */
+    gulp.watch('app/js/', scripts);/* если есть изминения в каталоге то выполняется функция scripts */
+    gulp.watch('app/img/', img);/* если есть изминения в каталоге то выполняется функция img */
 }
 
 

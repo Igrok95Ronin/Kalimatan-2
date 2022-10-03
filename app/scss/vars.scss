@@ -1,0 +1,16 @@
+//vars
+//fontSize
+$fontSizeTitle: clamp(40px,5vw,50px);
+$fontSizeMiniTitle: clamp(25px,3vw,30px);
+$fontSizeText: clamp(16px,2.5vw,20px);
+$fontSizeParalax: clamp(55px,16.5vw,170px);
+
+//Colors    
+$bgColorHeaderNav: linear-gradient(-39deg, #8b0fe4 10%, #6d0eb1 40%);
+$navColorHoverActive: #ffec17;
+
+$bgColorSite: #6a0dac;
+$bgColorBtn: #ed1c94;
+$bgColorLine: linear-gradient(to right, #ed1c94 50%, #981df0 120%);
+$bgColorFooter: #29293a;
+$colorTitle: #29293A; 
