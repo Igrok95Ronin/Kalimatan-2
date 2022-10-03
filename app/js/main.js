@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function () {
         );
 
         //Scroll
-        let width = 0;
+        let width = window.screen.availWidth;
         window.addEventListener('resize', function () {
             width = window.screen.availWidth;
         });/* ширина окна браузера */
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
             const btnFixed__btnTopFixedNone = document.querySelector('.btnFixed__btnTopFixedNone');
 
 
-            if (width > 767 && scrollY > 150) {
+            if (width > 767 && scrollY > 200) {
                 header.classList.add('header__fixed');
             } else {
                 header.classList.remove('header__fixed');
@@ -55,6 +55,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
         //paroller
         $('.my-paroller').paroller();
+
+        //menu
+        const header__arrow = document.querySelector('.header__arrow');
+        
+        header__arrow.addEventListener('click', e => {
+            e.preventDefault();
+        });
 
         //menu-burger
         const btn = document.querySelector('.header-burger-btn');
